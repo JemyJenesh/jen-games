@@ -46,5 +46,17 @@ module.exports = {
     port: 3000,
     hot: true,
     historyApiFallback: true,
+    proxy: [
+      {
+        context: "/api/**",
+        target: "http://localhost:3001",
+        changeOrigin: true,
+      },
+      {
+        context: "/static/**",
+        target: "http://localhost:3001",
+        changeOrigin: true,
+      },
+    ],
   },
 };

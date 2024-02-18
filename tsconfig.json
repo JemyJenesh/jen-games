@@ -16,9 +16,15 @@
     "baseUrl": "./",
     "paths": {
       "@types/*": ["types/*"],
-      "@client/*": ["client/src/*"]
+      "@client/*": ["client/src/*"],
+      "@server/*": ["server/src/*"]
     }
   },
-  "include": ["client/**/*.ts", "client/**/*.tsx", "index.d.ts"],
+  "include": [
+    "client/**/*.ts",
+    "client/**/*.tsx",
+    "server/**/*.ts",
+    "index.d.ts"
+  ],
   "exclude": ["node_modules"]
 }
